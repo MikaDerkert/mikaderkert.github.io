@@ -1,14 +1,29 @@
 body{
-	font: 15px/1.5 'Merriweather', serif;
+	font: 15px/1.5 'Montserrat', sans-serif;
 	padding:0;
 	margin:0;
 	background-color: #ffffff
 }
+
+body a{
+	color: #d2d2d2;
+	text-decoration:underline;
+	font-size:15px;
+}
+
+body a:hover{
+	color: #000000;
+}
+
 /*global*/
 .container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
+}
+
+.container img{
+	width: 1020px;
 }
 
 ul{
@@ -85,7 +100,9 @@ header a:hover{
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat 0 -450px;
+	background:url('../img/showcase.jpg') no-repeat fixed left; 
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:center;
 	color:#ffffff;	
 }
@@ -94,10 +111,13 @@ header a:hover{
 	margin-top: 100px;
 	font-size: 50px;
 	margin-bottom: 10px;
+
 }
 
 #showcase p{
 	font-size:20px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 /*Boxes*/
@@ -111,6 +131,7 @@ header a:hover{
 	text-align: center;
 	width:30%;
 	padding:10px;
+	
 }
 
 #boxes .box img{
@@ -141,13 +162,30 @@ ul#services li{
 }
 
 footer{
-	padding:20px;
-	margin-top:20px;
-	color:#ffffff;
-	background-color: #e8491d;
+	padding:30px;
+	margin-top:30px;
+	color:#000000;
+	background-color: #ffffff;
 	text-align:center;
 }
 
+footer a{
+	color: #d2d2d2;
+	text-decoration:none;
+	font-size:16px;
+}
+
+footer li{
+	float:center;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+footer a:hover{
+	color: #000000;
+	font-weight: bold;
+
+}
 /* Media queries*/
 @media(max-width: 768px){
   header #branding,
@@ -186,3 +224,4 @@ footer{
   max-width: 800px;
   margin: 50px auto;
 }
+
