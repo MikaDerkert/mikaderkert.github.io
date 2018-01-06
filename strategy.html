@@ -4,12 +4,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name "description" content="Digital strategy","UX";>
-	<meta name "keywords" content="Digital strategy">
+	<meta name "description" content="Displaying work within the field of Digital strategy";>
+	<meta name "keywords" content="Digital strategy, User journeys, UX, north star metric, KPI's, business model, SEO, digital analytics tools, dashboard">
 	<meta name "author" content="Mika Derkert">
 	<title>Mika Derkert - Strategy</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
 </head>
 	<body>
 		<header>
@@ -36,18 +65,16 @@
 		</section>
 		<section id="case"> 
 				<div class="container">
-				<p> </p>
 				<h1> Client Case: Boende.se</h1>
 				<p> <b> Project Deliverables </b>  
 				<br>
-				Concrete suggestions on how we can work with Google Analytics in a better way to help us reach the above
-				goals and improve our conversion and service overall.
+				Concrete suggestions on how we can work with Google Analytics in a better way to help us reach our goals and improve our conversion and service overall.
 				<p>
 				Assistance in setting up all our funnels in Google Analytics.
 				<p> <b> Role </b>
 				<br> Project Manager, and Data Analysis with the rest of the team 
 				</p>
-				<img src="./img/boende.jpg">
+				<img src="./img/boende.jpg" alt="Digital and business strategy for boende.se">
 				 <h1>"The entire team at Boende was extremely impressed with all the students, their professionalism and the team's delivery. Thank you Mika!" 
 				<br> 
 				– Michelle Rea, Co-founder and CEO at Boende </h1>
@@ -84,6 +111,8 @@
 			</div>		
 	</body>
 	<footer>
-			<li> <a href="strategy.html">Back to top</a></li>		
+	<p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+	</p>		
 	</footer>
 </html>

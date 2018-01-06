@@ -4,13 +4,42 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name "description" content="Digital strategy">
-	<meta name "keywords" content="Digital strategy">
+	<meta name "description" content="Mika Derkert's personal website for displaying resume and examples of projects within the field of digital strategy and design">
+	<meta name "keywords" content="Digital strategy, UX, business strategy, design, Hyper Island, creative strategy, team work">
 	<meta name "author" content="Mika Derkert">
 	<title>Mika Derkert - Welcome</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+
 </head>
 	<body>
 		<header>
@@ -38,17 +67,17 @@
 				<section id="boxes"> 
 			<div class="container">
 				<div class="box"> 
-					<img src="./img/Design.svg">
+					<img src="./img/Design.svg" alt="Design skills">
 					<p><b> Design Strategy </b> 
 					<br> Design that is user centric and beautiful can change the whole perception of a brand. I love simplicity and the beauty of clean shapes and beautiful colors. </p>
 				</div>
 				<div class="box"> 
-					<img src="./img/leadership.svg">
+					<img src="./img/leadership.svg" alt="Team dynamics, leadership and facilitation">
 					<p><b> Team work </b> 
 					<br>Team work is everything. With a good team we can achieve miracles. A good team culture can be the difference between sucess and failure.</p>
 				</div>
 				<div class="box"> 
-					<img src="./img/Strategy.svg">
+					<img src="./img/Strategy.svg" alt="Digital strategy skills">
 					<p><b> Digital Data Strategy </b> 
 					<br> With data we can make decisions based on facts rather than gut feel. With data businesses can take meaningful decisons that will predict future growth.</p>
 				</div>
@@ -158,7 +187,9 @@
 	</body>
 
 	<footer>
-			<li> <a href="index.html">Back to top</a></li>		
+	<p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+	</p>		
 	</footer>
 
 </html>

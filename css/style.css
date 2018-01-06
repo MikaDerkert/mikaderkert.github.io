@@ -21,7 +21,6 @@ body a:hover{
 	margin: auto;
 	overflow: hidden;
 	max-width: 850px
-
 }
 
 .container img{
@@ -52,11 +51,12 @@ header a{
 	font-size:16px;
 }
 
+
+
 header li{
 	float:left;
 	display:inline;
 	padding: 0 20px 0 20px;
-
 }
 
 header #branding{
@@ -67,7 +67,6 @@ header #branding h1{
 	margin:0;
 }
 
-
 header nav{
 	float:right;
 	margin-top: 10px;
@@ -75,12 +74,12 @@ header nav{
  
 header .highlight, header .current a{
 	color:#000000;
-	font-weight:medium;
+	font-weight:bold;
 }
 
 header a:hover{
-	color: #000000;
-	font-weight: medium;
+	color: #cccccc;
+	font-weight: bold;
 
 }
 
@@ -89,7 +88,7 @@ header a:hover{
 #showcase{
 	min-height: 400px;
 	background:url('../img/showcase.jpg') no-repeat fixed left; 
-    opacity: 0.4;
+    opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:center;
 	color:#ffffff;	

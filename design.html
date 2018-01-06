@@ -4,12 +4,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name "description" content="Digital strategy">
-  <meta name "keywords" content="Digital strategy">
+  <meta name "description" content="Displaying work within the field of digital strategy">
+  <meta name "keywords" content="User experience, user interface, design, service design, webdesign, html, javascript, css">
   <meta name "author" content="Mika Derkert">
   <title>Mika Derkert - Design</title>
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+  
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+
+});
+</script>
 </head>
   <body>
     <header>
@@ -50,7 +79,7 @@
         <br> Design and concept development 
         </p>
         </p>
-        <img src="./img/tweetgame.png">
+        <img src="./img/tweetgame.png" alt="UX design of quiz game">
         <h1>“Who tweeted?“ </h1> <p> <b> About Tweetgame</b> <br>Tweetgame is a game where you get the chance to test your knowledge in the thoughts and opinions of famous people. Follow the link below to try out the game.</p>
 
         <p> <a href="http://thetweetgame.com" target="_blank"> thetweetgame.com</a> </p>
@@ -64,7 +93,9 @@
       </div>    
   </body>
   <footer>
-      <li> <a href="design.html">Back to top</a></li>   
+  <p id="back-top">
+    <a href="#top"><span></span>Back to Top</a>
+  </p>    
   </footer>
 </html>
  
