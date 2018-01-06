@@ -46,7 +46,7 @@ min-height: 80px;
 }
 
 header a{
-	color: #d2d2d2;
+	color: #000000;
 	text-decoration:none;
 	font-size:16px;
 }
@@ -72,16 +72,44 @@ header nav{
 	margin-top: 10px;
 }
  
-header .highlight, header .current a{
+header .current a{
 	color:#000000;
-	font-weight:bold;
+	font-weight:medium;
+	display: block;
+	height: 1px;
+	width: 100%;
+	background: #fffc00;
+	padding-bottom: 2px;
+  	
+
 }
 
-header a:hover{
-	color: #000000;
-	font-weight: bold;
 
+
+/*COOL LINK*/
+
+
+.cool-link {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
 }
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 8px;
+    background: #519075;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
 
 /*showcase*/
 
