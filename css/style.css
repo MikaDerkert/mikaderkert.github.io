@@ -73,14 +73,7 @@ header nav{
  
 header .current a{
 	color:#000000;
-	font-weight:medium;
-	display: block;
-	height: 1px;
-	width: 100%;
-	background: #fffc00;
-	padding-bottom: 2px;
-  	
-
+	font-weight:medium;  	
 }
 
 
@@ -173,6 +166,7 @@ header .current a{
 	overflow: hidden;
 	max-width: 850px
 }
+
 
 
 /*Boxes*/
