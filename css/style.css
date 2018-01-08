@@ -71,12 +71,19 @@ header nav{
 	margin-top: 10px;
 }
  
-header .current a{
-	color:#000000;
-	font-weight:medium;  	
+header .current {
+	color: blue;
 }
 
 
+/*COOL LINK
+header .current {
+	color:#000000;
+	font-weight:medium;
+  	border-bottom: 8px  solid;
+  	border-bottom-color: #519075 padding-left 5px;
+}
+*/
 
 /*COOL LINK*/
 
@@ -97,6 +104,11 @@ header .current a{
 }
 
 .cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.cool-link:active::after {
     width: 100%;
     //transition: width .3s;
 }
@@ -128,6 +140,12 @@ header .current a{
 	padding-right:  10%;
 
 }
+
+/*test
+#showcase p:after {
+    content: ' \261F';
+    font-size: 60px;
+} */
 
 /*case*/
 
@@ -167,6 +185,15 @@ header .current a{
 	max-width: 850px
 }
 
+
+#resume h2:before {
+    content: ' \270E';
+    font-size: 25px;
+}
+
+#resume h2 {
+    font-size: 15px;
+}
 
 
 /*Boxes*/
