@@ -72,7 +72,7 @@ header nav{
 }
  
 header .current {
-	color: blue;
+	color: #000000;
 }
 
 
@@ -192,7 +192,8 @@ header .current {
 }
 
 #resume h2 {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 
