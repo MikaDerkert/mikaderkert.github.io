@@ -20,11 +20,20 @@ body a:hover{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
-	max-width: 850px	
+	max-width: 850px
+
 }
 
 .container img{
 	width: 1020px;
+}
+
+
+
+.underline{
+	border-bottom: 8px  solid #519075;
+	padding-bottom:1.5px;
+	line-height: 1.4;
 }
 
 ul{
@@ -38,7 +47,7 @@ ul{
 
 header{
 
-color: #ffffff;
+color: #000000;
 padding-top: 30px;
 min-height: 80px;
  
@@ -47,7 +56,7 @@ min-height: 80px;
 header a{
 	color: #000000;
 	text-decoration:none;
-	font-size:16px;
+	font-size:15px;
 }
 
 
@@ -210,13 +219,16 @@ header .current {
 	width: 100%;
 	overflow: hidden;
 	max-width: 1600px
+	font-size: 15px;
+	text-align: center;
+    
 }
 
 #boxes .box{
 	float:left;
 	text-align: center;
 	width:30%;
-	padding:10px;	
+	padding:13px;	
 }
 
 #boxes .box img{
