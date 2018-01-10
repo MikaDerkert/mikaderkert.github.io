@@ -4,25 +4,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name "description" content="Digital strategy">
-  <meta name "keywords" content="Digital strategy">
+  <meta name "description" content="Displaying work within the field of digital strategy">
+  <meta name "keywords" content="User experience, user interface, design, service design, webdesign, html, javascript, css">
   <meta name "author" content="Mika Derkert">
   <title>Mika Derkert - Design</title>
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108081110-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108081110-2');
+  </script>
+
+    <!-- Hotjar Tracking Code for https://mikaderkert.github.io/ -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:739381,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <!-- Back to top animation -->
+<script>
+$(document).ready(function(){
+
+  // hide #back-top first
+  $("#back-top").hide();
+  
+  // fade in #back-top
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#back-top').fadeIn();
+      } else {
+        $('#back-top').fadeOut();
+      }
+    });
+
+    // scroll body to 0px on click
+    $('#back-top a').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
+});
+</script>
+
 </head>
+
   <body>
     <header>
       <div class="container">
       <div id="branding">
+      <a class="container" href="index.html">
         <h1><span class="highlight">Mika Derkert</span></h1>
       </div>
         <nav>
           <ul>
-            <li> <a href="index.html">Resumé</a></li>
-            <li> <a href="strategy.html">Strategy</a></li>
-            <li class="current"> <a href="design.html">Design</a></li>
-          </ul>
+                 <li class="cool-link"> <a href="index.html">Resumé</a></li>
+                 <li class="cool-link"> <a href="strategy.html">Strategy</a></li>
+                 <li class="cool-link"> <span class="underline"> Design </span> </li>
+              </ul>
         </nav>
       </div>
     </header>
@@ -30,24 +84,34 @@
     <section id="showcase">
       <div class="container">
       <h1> Design </h1>
-        <p>Design that is user centric and beautiful can change the whole percieption of a brand. I love simplicity and the beauty of clean shapes and beautiful colors. </p>  
-      </div>
+        <p>Design that is user centric and beautiful can change the whole perception of a brand. I love simplicity and the beauty of clean shapes and colour.  <br></br> </p>  
+        <a href="#case"><span></span></a>
+        </section>
+        <section id="case" class="container">
+        </section>
+        </div>
     </section>
 
-    <section id="container"> 
+    <section id="case"> 
         <div class="container">
-        <h1> The Tweet Game</h1>
+        <h1> Project: The Tweet Game</h1>
+        <p> <b> About the project </b>
+        <br>
+        During two weeks, me and my team built this website from scratch, using html, CSS, and JavaScript. Without any previous experince of building a site like this, we managed to have the site done in time. We also implemented a Google Analytics-, and Hotjar tracking code to to see how the users behaved on the site, and to see the demographics and amount of visitors the site had.
+        <p>
         <p> <b> Project Deliverables </b>  
         <br>
-        During 2 weeks, create a website that could go viral. Implement Google Analytics tracking code to track your visitors.
+        Create a website that could go viral, and implement some SEO. Use Google Analytics to track your visitors.
         <p>
-        <a href="www.thetweetgame.com">thetweetgame.com</a>
         <p> <b> Role </b>
-        <br> Design and concept development
+        <br> Design and concept development 
         </p>
         </p>
-        <img src="./img/tweetgame.png">
-        <h1>“Who tweeted?“ </h1> <p> <b> About Tweetgame</b> <br>Tweetgame is a game where you get the chance to test your knowledge in the thoughts and opinions of famous people. Guess who tweeted? "Does anyone think global warming is a good thing? I love Lady Gaga. I think she's a really interesting artist." Niki Minaj or Britney Spears? </p>
+        <img src="./img/tweetgame.png" alt="UX design of quiz game">
+        <h1>“Who tweeted?“ </h1> <p> <b> About Tweetgame</b> <br>Tweetgame is a game where you get the chance to test your knowledge in the thoughts and opinions of famous people. Follow the link below to try out the game.</p>
+
+        <p> <a href="http://thetweetgame.com" target="_blank"> thetweetgame.com</a> </p>
+
         </div>
       </section>
     <section id="main"> 
@@ -57,7 +121,9 @@
       </div>    
   </body>
   <footer>
-      <li> <a href="design.html">Back to top</a></li>   
+  <p id="back-top">
+    <a class="cool-link" href="#top"">Back to Top</a>
+  </p>    
   </footer>
 </html>
  
