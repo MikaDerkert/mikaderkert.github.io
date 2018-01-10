@@ -309,10 +309,15 @@ footer a:hover{
 	padding-right:  0%;
 	 }
 
-.cool-link{
+	.cool-link{
 	padding-left: 0px;
-	float: none;
-	width:25%;
+	float: center;
+	width:30%;
 	padding: 0px;
+	 }
+
+	 .underline{
+	border-bottom: 0px  solid #519075;
+	padding-left: 0px;
 	 }
 
