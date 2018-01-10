@@ -63,6 +63,19 @@ $(document).ready(function(){
 
 });
 </script>
+	<!-- SCROLL DOWN -->
+<script>
+
+		// scroll body to 0px on click
+		$('#scroll-down a').click(function () {
+			$('body,html').animate({
+				scrollTop: 30
+			}, 80);
+			return false;
+		});
+	});
+
+</script>
 
 </head>
 	<body>
@@ -74,20 +87,24 @@ $(document).ready(function(){
 			</div>
 				<nav>
 					<ul>
-            		 <li> <span class="underline"> Resumé </span> </li>
+            		 <li class="cool-link"> <span class="underline"> Resumé </span> </li>
            			 <li class="cool-link"> <a href="strategy.html">Strategy</a></li>
            			 <li class="cool-link"> <a href="design.html">Design</a></li>
          			</ul>
 				</nav>
 			</div>
 		</header>
+
 		<section id="showcase">
 			<div class="container">
 				<h1 class="ml3">Hi, and welcome!</h1>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 				<p>My name is Mika Derkert and I'm a Digital Data Strategist, with an eye for design, and a passion for leadership and facilitation. <br>Scroll down to read my resumé. <br></br> </p>
-				<img src="./img/downarrow.svg" alt="downarrow">
-			</div>
+  				<a href="#boxes"><span></span></a>
+				</section>
+				<section id="boxes" class="box">
+				</section>
+				</div>
 		</section>
 
 			<section id="boxes"> 
@@ -121,7 +138,7 @@ $(document).ready(function(){
 				<p> I currently study Digital Data Strategy at Hyper Island in Stockholm. I have worked within the field of Graphic Design, and I have studied Art, Rhetorics, Culture and Critical Theory, Graphic Design and Packaging Design. Now, however I'm all about tracking conversion and creating digital strategies for companies growth. 
 				<p>
 				When I'm not working on exciting projects, I practice Thai- and Kick Boxing, which is my way to handle a hectic life style at the same time socialising, coaching others and being coached. I also love skiing and hiking which are hobbies I try to pursue at least a couple of days a year. Apart from fighting and being out in the nature, I enjoy traveling and experiencing new music, movies, food, drinks and what not. </p>
-				Don't hesitate to connect! 👇
+				Don't hesitate to connect! 
 				</p>
 
 				<h2>
