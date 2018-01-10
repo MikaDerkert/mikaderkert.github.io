@@ -306,12 +306,13 @@ footer a:hover{
   }
 
 .container{
-	width: 100%;
+	width: 90%;
  }
 
  #case .container, #resume .container{
-max-width: :100%;
+width: :100%;
  }
+
 
   header{
     padding-bottom:20px;
@@ -322,16 +323,7 @@ max-width: :100%;
    font-size: 230%;
   }
 
-#showcase {
-	height: 100px;
-	background: currentColor;
-	background color:519075;
-	max-width: :100%; 
-    opacity: 0.45;
-    filter: alpha(opacity=50); /* For IE8 and earlier */	
-	text-align:center;
-	color:#ffffff;	
- }
+
 
  #showcase p{
   font-size: 130%;
