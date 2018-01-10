@@ -66,14 +66,12 @@ $(document).ready(function(){
 	<!-- SCROLL DOWN -->
 <script>
 
-		// scroll body to 0px on click
-		$('#scroll-down a').click(function () {
-			$('body,html').animate({
-				scrollTop: 30
-			}, 80);
-			return false;
-		});
-	});
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+  });
+});
 
 </script>
 
