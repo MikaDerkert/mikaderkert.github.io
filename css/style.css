@@ -125,7 +125,9 @@ header .current {
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat fixed left; 
+	background:url('../img/showcase.jpg') no-repeat fixed center;
+	background-size: cover;
+
     opacity: 0.45;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:center;
