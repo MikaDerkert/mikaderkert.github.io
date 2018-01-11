@@ -125,7 +125,7 @@ header .current {
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat fixed center;
+	background:url('../img/showcase.jpg') no-repeat center;
 	background-size: cover;
 
     opacity: 0.45;
