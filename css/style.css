@@ -323,11 +323,13 @@ width: :100%;
  #showcase h1{
    margin-top:40px;
    font-size: 210%;
+   line-height: 50%;
   }
 
 #showcase{
 	background:url('/img/showcase.jpg') no-repeat center;
-
+	background-size: 50%;
+  }
 
  #showcase p{
   font-size: 120%;
