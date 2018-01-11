@@ -125,7 +125,7 @@ header .current {
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat center;
+	background:url('/img/showcase.jpg') no-repeat fixed center;
 	background-size: cover;
 
     opacity: 0.45;
@@ -322,13 +322,13 @@ width: :100%;
 
  #showcase h1{
    margin-top:40px;
-   font-size: 230%;
+   font-size: 220%;
   }
 
 
 
  #showcase p{
-  font-size: 130%;
+  font-size: 120%;
   padding-left: 0px;
   padding-right: 0px;
  
