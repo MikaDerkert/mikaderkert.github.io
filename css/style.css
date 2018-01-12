@@ -293,6 +293,13 @@ footer a:hover{
 
 }
 /* Media queries*/
+@media(max-width: 975px){
+ #boxes .box{
+  float:none;
+  width:100%;
+  padding:0px;
+  }
+  
 @media(max-width: 710px){
   header #branding,
   header nav,
