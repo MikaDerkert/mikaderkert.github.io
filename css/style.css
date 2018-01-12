@@ -127,11 +127,6 @@ header .current {
 	min-height: 400px;
 	background:url('/img/showcase.jpg') no-repeat fixed center;
 	background-size: cover;
-
-    opacity: 0.45;
-    filter: alpha(opacity=50); /* For IE8 and earlier */	
-	text-align:center;
-	color:#ffffff;	
 }
 
 #showcase h1{
@@ -359,16 +354,12 @@ footer a:hover{
 	padding-top:5px; 
   }
 
-
-
-
 .cool-link {
 	padding-left: 0px;
-	line-height: 2.2;
+	line-height: 2.4;
     display: inline-block;
     color: #000000;
     text-decoration: none;
-
 }
 
 .cool-link::after {
@@ -395,6 +386,6 @@ footer a:hover{
 li .underline {
 	border-bottom: 0px  solid #519075;
 	text-decoration: underline;
-	line-height: 2.2;
+	line-height: 2.4;
 
 	 }
