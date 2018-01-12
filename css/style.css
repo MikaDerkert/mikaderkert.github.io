@@ -329,8 +329,8 @@ width: :100%;
 
 #showcase{
 	min-height: 400px;
-	background:url('/img/showcase.jpg') no-repeat fixed center 110px;
-	background-size: cover;
+	background:url('/img/showcase.jpg') no-repeat  center ;
+	background-size: 800px;
  }
 
  #showcase p{
