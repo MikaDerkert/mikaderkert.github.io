@@ -361,3 +361,33 @@ width: :100%;
     display: inline-block;
     color: #000000;
     text-decoration: none;
+
+}
+
+.cool-link::after {
+    content: '';
+    display: none;
+    width: 0;
+    height: 3px;
+    background: #000000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    display: none;
+}
+
+.cool-link:active::after {
+    width: 100%;
+    //transition: width .3s;
+    display: none;
+    font-weight: bold;
+}
+
+li .underline {
+	border-bottom: 0px  solid #519075;
+	text-decoration: underline;
+	line-height: 2.2;
+
+	 }
