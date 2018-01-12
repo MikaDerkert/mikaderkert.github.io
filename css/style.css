@@ -126,7 +126,7 @@ header .current {
 #showcase{
 	min-height: 400px;
 	background:url('/img/showcase.jpg') no-repeat fixed center;
-	
+	background-size: cover;
 
 	opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
@@ -225,6 +225,11 @@ header .current {
     font-weight: lighter;
 }
 
+#resume h3, #case h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+}
 
 /*Boxes*/
 
