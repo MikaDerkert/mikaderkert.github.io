@@ -128,7 +128,7 @@ header .current {
 	background:url('/img/showcase.jpg') no-repeat fixed center;
 	background-size: cover;
 
-    opacity: 0.45;
+	opacity: 0.45;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:center;
 	color:#ffffff;	
@@ -293,6 +293,13 @@ footer a:hover{
 
 }
 /* Media queries*/
+@media(max-width: 975px){
+ #boxes .box{
+  float:none;
+  width:100%;
+  padding:0px;
+  }
+  
 @media(max-width: 710px){
   header #branding,
   header nav,
@@ -311,8 +318,8 @@ footer a:hover{
 	width: 90%;
  }
 
- #case .container, #resume .container{
-width: :100%;
+#resume, #case {
+	width: 100%;
  }
 
 
@@ -352,16 +359,12 @@ width: :100%;
 	padding-top:5px; 
   }
 
-
-
-
 .cool-link {
 	padding-left: 0px;
-	line-height: 2.2;
+	line-height: 2.4;
     display: inline-block;
     color: #000000;
     text-decoration: none;
-
 }
 
 .cool-link::after {
@@ -388,6 +391,6 @@ width: :100%;
 li .underline {
 	border-bottom: 0px  solid #519075;
 	text-decoration: underline;
-	line-height: 2.2;
+	line-height: 2.4;
 
 	 }
