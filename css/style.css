@@ -128,7 +128,7 @@ header .current {
 	background:url('/img/showcase.jpg') no-repeat fixed center;
 	background-size: cover;
 
-	opacity: 0.45;
+	opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:center;
 	color:#ffffff;	
@@ -336,7 +336,7 @@ footer a:hover{
 
 #showcase{
 	min-height: 400px;
-	background:url('/img/showcase.jpg') no-repeat left;
+	background:url('/img/showcase.jpg') no-repeat center;
 	background-size: 730px;
  }
 
