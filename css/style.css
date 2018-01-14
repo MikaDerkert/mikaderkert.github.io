@@ -125,9 +125,8 @@ header .current {
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat fixed center +10px;
+	background:url('/img/showcase.jpg') no-repeat fixed center +10px;
 	background-size: cover;
-
     opacity: 0.45;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
 	text-align:left;
@@ -148,6 +147,12 @@ header .current {
 	padding-left:  0%;
 	padding-right:  60%;
 	text-align: left;
+}
+
+#showcase h1 .underline{
+	border-bottom: 3px  solid #fff;
+	padding-bottom:1.5px;
+	line-height: 1.5;
 }
 
 
@@ -231,6 +236,13 @@ header .current {
     font-weight: lighter;
     text-align: center;
 }
+
+#resume h4{
+    font-size: 18px;
+    font-weight: medium;
+    line-height: 0;
+}
+
 
 /*Boxes*/
 
@@ -344,6 +356,7 @@ footer a:hover{
   }
 
  #showcase h1{
+ 	text-align: center;
    margin-top:50px;
    font-size: 35px;
     line-height: 1.05;
@@ -359,7 +372,7 @@ footer a:hover{
   font-size: 19px;
   line-height: 1.3;
   	padding-left:  0%;
-	padding-right:  35%;
+	padding-right:  0%;
   }
 
 #boxes .box{
@@ -403,14 +416,15 @@ li .underline {
 	line-height: 2.4;
 	 }
 
-@media(max-width: 376px){
+@media(max-width: 380px){
 #showcase p{
   padding-top: 8PX;
-	padding-left:  0%;
-	padding-right:  0%;
+
 	
 	 }
 #showcase h1{
 	font-size: 28px;
    margin-top:30px;
     }
+
+
