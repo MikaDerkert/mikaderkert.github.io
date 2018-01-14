@@ -419,12 +419,13 @@ li .underline {
 @media(max-width: 380px){
 #showcase p{
   padding-top: 8PX;
+  display: none;
 
 	
 	 }
 #showcase h1{
 	font-size: 28px;
-   margin-top:30px;
+   margin-top: 190px;
     }
 
 
