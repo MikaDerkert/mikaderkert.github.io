@@ -24,7 +24,7 @@ body a:hover{
 }
 
 .container2{
-	width: 100%;
+	width:65%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -130,7 +130,7 @@ header .current {
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat fixed center +10px;
+	background:url('/img/showcase.jpg') no-repeat fixed center +10px;
 	background-size: cover;
     opacity: 0.45;
     filter: alpha(opacity=50); /* For IE8 and earlier */	
@@ -247,6 +247,12 @@ header .current {
     font-weight: medium;
     line-height: 0;
 }
+#resume #case h5{
+    font-size: 30px;
+    font-weight: medium;
+    line-height: 0;
+    color: gray;
+}
 
 /*Interest Images*/
 
@@ -254,9 +260,11 @@ header .current {
 
 #images .image{
 	float:left;
-
-	width:33.33%;
-	padding:0px;	
+	width:20%;
+	padding-right:50px;
+	padding-left: 50px;	
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #images .image img{
@@ -376,7 +384,7 @@ footer a:hover{
 
    #images .image{
   float:left;
-  width:50%;
+  width:70%;
   }
 
 #resume, #case {
@@ -397,7 +405,7 @@ footer a:hover{
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/showcase.jpg') no-repeat center;
+	background:url('/img/showcase.jpg') no-repeat center;
 	background-size: 730px;
  }
 
@@ -458,6 +466,11 @@ li .underline {
 	text-align: center;
    	margin-top: 190px;
     }
+    #images .image{
+  float:center;
+  width:60%;
+  padding-top: 10px;
+  }
 
  
 
